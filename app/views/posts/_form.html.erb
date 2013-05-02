@@ -1,0 +1,10 @@
+<body>
+	<div class="form">	
+
+		<%= form_for([@post]) do |f| %>
+		<%= f.label :tag_list, "Enter your response" %>
+		<%= f.text_field :tag_list %>
+		<%= f.submit %>
+		<% end %>
+	</div>
+</body>

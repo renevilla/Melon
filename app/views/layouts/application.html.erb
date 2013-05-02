@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Melon</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<!-- <p class="notice">yo<%= notice %></p>
+<p class="alert">yo<%= alert %></p> -->
+<%= yield %>
+
+</body>
+</html>
