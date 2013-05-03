@@ -2,9 +2,9 @@
 	<div class="form">	
 
 		<%= form_for([@post]) do |f| %>
-		<%= f.label :tag_list, "Enter your response" %>
-		<%= f.text_field :tag_list %>
+		<%= f.select(:tag_list, ['','Item 1', 'Item 2'], {}, { :class => 'my_style_class' }) %>
 		<%= f.submit %>
 		<% end %>
+
 	</div>
 </body>
