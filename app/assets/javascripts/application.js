@@ -13,8 +13,16 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
-//= require jquery.ui.all
+//= require jquery.ui.core
+//= require select2
 
+$(document).ready(function() {
+
+$("#post_tag_list").select2({
+    placeholder: "When do you concentrate the best?",
+    allowClear: true
+});
+});
 
 function changeColor(curNumber){
     curNumber++;
@@ -34,6 +42,9 @@ function changeColor(curNumber){
         $('body').attr('class', 'color' + curNumber);
     }
     console.log(curNumber);
-    setTimeout(function(){changeColor(curNumber)}, 1000);  
-}​
-changeColor(0);
+    setTimeout(function(){changeColor(curNumber)}, 1000); } 
+
+changeColor(0); 
+
+
+

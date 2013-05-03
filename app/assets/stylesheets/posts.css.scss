@@ -15,11 +15,14 @@
 
 body, html {height: 100%; width: 100%; min-height: 100%; padding: 0; margin: 0;}
 
+header#melon {width: 165px; margin: 0 auto;}
+
 body {
 
 	font-size: 100%;
     color: #fff; 
-    width: 100%; 
+    width: 100%;
+    font-family: helvetica;  
     @include css-gradient(rgba(115, 205, 203, 1), rgba(92, 196, 180, 1), rgba(105, 191, 150, 1), rgba(101, 193, 137, 1), 32%, 65%, 84%, 100% );
    // @include gradient(rgba(65, 200, 142, 1), rgba(154, 199, 101, 1), rgba(205, 201, 42, 1), rgba(235, 214, 14, .95)); 
 	-webkit-transition: all .5s linear;  
@@ -28,18 +31,7 @@ body {
     -ms-transition: all .5s linear;  
     transition: all .5s linear; }
 
-#tag_cloud{
-	width: 1020px;
-	margin: 0 auto;
-	text-align: center;
-	line-height: 1.6em;
-	.s { font-size: 1em; }
-	.m { font-size: 1.2em; }
-	.l { font-size: 1.8em; }
-}
-
-
-//BACKGROUND GRADIENT
+// BODY BACKGROUND GRADIENT
 .color1 { @include css-gradient(rgba(115, 205, 203, 1), rgba(92, 196, 179, 1), rgba(105, 191, 150, 1), rgba(101, 193, 137, 1), 31%, 64%, 84%, 100% ); }
 .color2 { @include css-gradient(rgba(115, 205, 202, 1), rgba(92, 196, 176, 1), rgba(105, 191, 150, 1), rgba(102, 193, 137, 1), 30%, 64%, 84%, 100% ); }
 .color3 { @include css-gradient(rgba(115, 205, 202, 1), rgba(92, 196, 175, 1), rgba(105, 191, 150, 1), rgba(102, 193, 137, 1), 29%, 62%, 84%, 100% ); }
@@ -183,3 +175,30 @@ body {
 .color140 { @include css-gradient(rgba(115, 205, 203, 1), rgba(92, 196, 179, 1), rgba(105, 191, 150, 1), rgba(101, 193, 137, 1), 31%, 64%, 84%, 100% ); }
 
 
+//General Styling
+
+section#content_wrap {width: 95%; margin: 0 auto;}
+//TAG CLOUD
+#tag_cloud{
+	width: 1020px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 1.6em;
+	.s { font-size: 1em; }
+	.m { font-size: 1.2em; }
+	.l { font-size: 1.8em; }
+}
+
+// FORM
+.select2-container, .select2-drop, .select2-search, .select2-search input { width: 550px; background: rgba(255,255,255,0.4);}
+.select2-container a.select2-choice {background-image: none; background: rgba(255,255,255,0.4); border: none; }
+section#content_wrap .select2-container .select2-choice div {display: none;}
+section#content_wrap #select2-drop, section#content_wrap .select2-drop, section#content_wrap .select2-drop-active {background: rgba(255,255,255,0.4); }
+
+section#content_wrap .select2-search input {padding: 10px 5px;}
+.select2-drop {text-align: center;}
+#section#content_wrap .select2-drop {color: #ddd;}
+div#select2-drop-mask.select2-drop-mask {color: #777;}
+
+select#post_tag_list {width: 550px; background: rgba(255,255,255,0.5); border: none;}
+select#post_tag_list .select2-container a.select2-choice {border: none; padding: 10px;}
