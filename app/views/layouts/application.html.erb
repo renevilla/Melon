@@ -5,6 +5,27 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+
+<script type="text/javascript">
+      /*!
+       * Create an array of word objects, each representing a word in the cloud
+       */
+      var word_array = [
+          {text: "Lorem", weight: 15, html: {title: "I can haz any html attribute"}},
+          {text: "Ipsum", weight: 9, html: {title: "I can haz any html attribute"}},
+          {text: "Dolor", weight: 6, html: {title: "I can haz any html attribute"}},
+          {text: "Sit", weight: 7, html: {title: "I can haz any html attribute"}},
+          {text: "Amet", weight: 5, html: {title: "I can haz any html attribute"}}
+          // ...as many words as you want
+      ];
+
+      $(function() {
+        // When DOM is ready, select the container element and call the jQCloud method, passing the array of words as the first argument.
+        $("#tag_cloud").jQCloud(word_array);
+      });
+    </script>
+
+
 </head>
 <body>
 
