@@ -9,7 +9,7 @@
 		<%= form_for([@post]) do |f| %>
 		<%= f.label :tag_list, "Enter your response" %>
 		<%= f.text_field :tag_list %>
-		<%= f.submit %>
+		<%= f.submit "go", :id => "append" %>
 		<% end %>
 
 	</div>

@@ -68,6 +68,9 @@ GEM
     fastercsv (1.5.5)
     formtastic (2.2.1)
       actionpack (>= 3.0)
+    gon (4.1.0)
+      actionpack (>= 2.3.0)
+      json
     has_scope (0.5.1)
     hike (1.2.2)
     i18n (0.6.1)
@@ -75,8 +78,6 @@ GEM
       has_scope (~> 0.5.0)
       responders (~> 0.9)
     journey (1.0.4)
-    jqcloud-rails (1.0.0)
-      jquery-rails
     jquery-rails (2.2.1)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
@@ -162,7 +163,7 @@ DEPENDENCIES
   activeadmin
   acts-as-taggable-on (~> 2.3.1)
   coffee-rails (~> 3.2.1)
-  jqcloud-rails (~> 1.0.0)
+  gon (~> 4.1.0)
   jquery-rails
   jquery-ui-rails
   rails (= 3.2.13)
