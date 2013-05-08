@@ -14,15 +14,67 @@
 //= require jquery_ujs
 //= require_tree .
 //= require jquery.ui.core
-//= require select2
+//= require selectjs
+//= require masonry
 
 $(document).ready(function() {
 
 $("#post_tag_list").select2({
-    placeholder: "When do you concentrate the best?",
+    placeholder: "Listening To Classical Music",
     allowClear: true
 });
+
+//$('.tag_name').hide();
+// $('.item').click(function(){
+ //      $(this).next(".tag_name").slideToggle("display");
+   //     $(this).toggleClass('opened');
+        
+     //     });
+
+
+
+$(".item").click(function(){
+      $(".tag_name").hide("fast");
+      $(this).next(".tag_name").slideToggle("display");
 });
+
+
+   // $('.item').click(function(){
+        // get the clicked on id and convert it to shortened form
+   //     var id = this.id.replace(/\-.*$/, "");
+  //  var item = $("#" + id);
+        // toggle others that are open and toggle the current one
+  //      $(".tag_name").not(".display").add(item).animate({"height": "toggle", "opacity": "toggle"}, "slow").toggleClass("display"); 
+ //   });
+
+
+
+//if ($("#select2-drop").is(':visible')){
+  //      $(".tester").addClass("about_highlight"); 
+   // } else {
+//}
+
+ $('#add_new').click(function(){
+        $('#new_form').slideToggle("slow");
+        $(this).toggleClass('open');
+    });
+
+});
+
+
+
+
+
+
+  //  $('html').click(function() {
+            
+    //        $('#new_form').removeClass('slow');
+      //  });
+ 
+
+
+
+
 
 function changeColor(curNumber){
     curNumber++;
@@ -45,6 +97,9 @@ function changeColor(curNumber){
     setTimeout(function(){changeColor(curNumber)}, 1000); } 
 
 changeColor(0); 
+
+
+
 
 
 
