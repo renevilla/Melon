@@ -24,6 +24,8 @@ $("#post_tag_list").select2({
     allowClear: true
 });
 
+
+
 //$('.tag_name').hide();
 // $('.item').click(function(){
  //      $(this).next(".tag_name").slideToggle("display");
@@ -35,8 +37,11 @@ $("#post_tag_list").select2({
 
 $(".item").click(function(){
       $(".tag_name").hide("fast");
-      $(this).next(".tag_name").slideToggle("display");
+      $(this).prev(".tag_name").slideToggle("display");
 });
+
+
+
 
 
    // $('.item').click(function(){
